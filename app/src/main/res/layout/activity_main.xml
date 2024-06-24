@@ -9,9 +9,171 @@
     android:orientation="vertical"
     tools:context=".ui.theme.MainActivity">
 
-    <TextView
-        android:id="@+id/math_operation"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_height="260sp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/math_operation"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:gravity="end"
+            android:ellipsize="start"
+            android:text="TextView" />
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textColor="#969696"
+            android:textSize="48sp"
+            android:gravity="end"
+            android:ellipsize="start"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10sp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:background="#313131"
+            android:layout_marginHorizontal="9sp"
+            android:layout_marginBottom="15sp">
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/ClearButton"
+                android:text="C"
+                >
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="+/-">
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="%">
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="÷">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/DefaultButton"
+                android:text="7">
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="8">
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="9">
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="×">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/DefaultButton"
+                android:text="4">
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="5">
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="6">
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="-">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/DefaultButton"
+                android:text="1">
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="2">
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="3">
+            </TextView>
+            <TextView
+                style="@style/DefaultButton"
+                android:text="+">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    style="@style/DefaultButton"
+                    android:text="0">
+                </TextView>
+                <TextView
+                    style="@style/DefaultButton"
+                    android:text=".">
+                </TextView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <TextView
+                    style="@style/CalculateButton"
+                    android:text="=">
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
 </LinearLayout>
